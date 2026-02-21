@@ -766,9 +766,6 @@ function EmptyState({ emoji, text }) {
   );
 }
 
-function getMedal(id) { return MEDALS.find(m=>m.id===id); }
-function getRank(id) { return RANKS.find(r=>r.id===id)||RANKS[0]; }
-
 // ── Shared styles ─────────────────────────────────────────────────────
 const selStyle = { background:"rgba(255,255,255,0.05)", border:"1px solid rgba(255,255,255,0.12)", color:"#fff", padding:"7px 11px", borderRadius:7, fontFamily:"'Courier New',monospace", fontSize:12, cursor:"pointer" };
 const btn = (bg,color) => ({ background:bg, color, padding:"8px 16px", borderRadius:8, border:"none", fontFamily:"'Courier New',monospace", fontWeight:700, fontSize:12, cursor:"pointer", letterSpacing:1 });
